@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Decodificador</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <nav>
+            <a href="index.html">
+                <img src="assets/Top.png" alt="Logo Alura">
+            </a>
+        </nav>
+    </header>
+
+    <main class="apresentacao">
+
+        <section class="apresentacao__conteudo">
+            <textarea class="text-area" rows="20" placeholder="Digite seu texto"></textarea>
+            <div class="apresentacao__conteudo__infos">
+                <div class="apresentacao__conteudo__alerta">
+                    <img src="./assets/exclamacao.png" alt="Imagem exclamacao">
+                    <p class="apresentacao__conteudo__alerta__texto">Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="apresentacao__btn">
+                    <button class="apresentacao__btn__crip" onclick="btnEncriptar()">Criptografar</button>
+                    <button class="apresentacao__btn__desc" onclick="btnDesencriptar()">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="saida__conteudo">
+
+                <div class="saida__conteudo__itens__1">
+                    <img class="saida__conteudo__imagem" src="/assets/imagem-menino.png" alt="Imagem do menino">
+                    <div class="saida__conteudo__mensagem">
+                        <h2>Nenhuma mensagem encontrada</h2>
+                        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    </div>
+                </div>
+
+                <div class="saida__conteudo__itens__2">
+                    <textarea class="mensagem"></textarea>
+                    <button class="btn-copiar">Copiar</button>
+                </div>
+            
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
